@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Roll_Dice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="casino-poker-with-dark-green-colors-seamless_152098-31" translatesAutoresizingMaskIntoConstraints="NO" id="v9u-wj-UCf">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="KWI-pO-4xt">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The sum is:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sel-I1-5J6">
+                                        <rect key="frame" x="75.5" y="0.0" width="263.5" height="66"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="55"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="cyS-7X-EA2">
+                                        <rect key="frame" x="69" y="116" width="276" height="256"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dice 3" translatesAutoresizingMaskIntoConstraints="NO" id="q0o-z5-azt">
+                                                <rect key="frame" x="0.0" y="0.0" width="118" height="256"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="118" id="AoL-So-bbl"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="dice 4" translatesAutoresizingMaskIntoConstraints="NO" id="5Gu-v3-efi">
+                                                <rect key="frame" x="158" y="0.0" width="118" height="256"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="118" id="QbU-nJ-6QN"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5cq-6L-SoE">
+                                        <rect key="frame" x="0.0" y="422" width="414" height="396"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Roll" cornerStyle="capsule" titleAlignment="center">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.15798733062158499" green="0.31266809800236495" blue="0.16112838853105094" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="55"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="rollACTION:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p64-Yd-9KA"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="5cq-6L-SoE" firstAttribute="leading" secondItem="KWI-pO-4xt" secondAttribute="leading" id="TOA-ke-bTV"/>
+                                    <constraint firstAttribute="trailing" secondItem="5cq-6L-SoE" secondAttribute="trailing" id="sda-be-Tii"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="KWI-pO-4xt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3KB-58-g9f"/>
+                            <constraint firstItem="KWI-pO-4xt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="AU8-tf-xEm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="KWI-pO-4xt" secondAttribute="bottom" id="AsF-nM-xhb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="v9u-wj-UCf" secondAttribute="bottom" id="Wl4-Jy-PIg"/>
+                            <constraint firstItem="v9u-wj-UCf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="eyB-nb-6Bg"/>
+                            <constraint firstItem="v9u-wj-UCf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="hQ7-Uw-QKt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KWI-pO-4xt" secondAttribute="trailing" id="j1I-kW-BT3"/>
+                            <constraint firstItem="v9u-wj-UCf" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="pYZ-xe-ccc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="labelSum" destination="Sel-I1-5J6" id="4Qm-uq-FXk"/>
+                        <outlet property="leftImageView" destination="q0o-z5-azt" id="HNF-c6-HyJ"/>
+                        <outlet property="rightImageView" destination="5Gu-v3-efi" id="l0H-gT-AxM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="83.705357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="casino-poker-with-dark-green-colors-seamless_152098-31" width="1000" height="1000"/>
+        <image name="dice 3" width="256" height="256"/>
+        <image name="dice 4" width="256" height="256"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
